@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import Hook from "./component/hook/Hook";
+import API from "./component/hook/API";
+import Hook2 from "./component/hook/Hook2";
+import { useState } from "react";
+import "./style.css"
+import Students from "./component2/Students";
+
 
 function App() {
+  // const [show,setShow] = useState(true)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* {
+        show?<Hook2 /> :"Now show hook2"
+      }
+      <button onClick={()=>setShow(!show)}>Show</button> */}
+
+
+      {/* API Student */}
+      <Students/>
     </div>
   );
 }
